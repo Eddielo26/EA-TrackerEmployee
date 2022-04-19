@@ -1,0 +1,26 @@
+{
+  "name": "ea-trackeremployee",
+  "version": "1.0.0",
+  "description": "![](https://img.shields.io/badge/Javascript-yellow.svg) ![](https://img.shields.io/badge/inquirer-red.svg) ![](https://img.shields.io/badge/MySQL12-blue.svg) ![](https://img.shields.io/badge/node.js-green.svg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eddielo26/EA-TrackerEmployee.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eddielo26/EA-TrackerEmployee/issues"
+  },
+  "homepage": "https://github.com/Eddielo26/EA-TrackerEmployee#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^8.2.2",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15"
+  }
+}
