@@ -9,13 +9,26 @@
 * [Description](#description)
 * [Video](#video)
 * [Installation](#installation)
+* [Packages Used](#packages-used)
 * [Contact](#contact)
-* [Usage](#usage)
+
 
 # Description 
-
+ * Using the command-line to manage a company's employee database, using Node.js, Inquirer, and MySQL2
+ * Giving the user the ability to:
+    * View all Deparments
+    * View all Roles
+    * View all Employees
+    * Add new Department
+    * Add new Role
+    * Add new Employee
+    * Update Employee Role
 
 # Video
+
+
+https://user-images.githubusercontent.com/94813193/168785371-422028d1-7f53-4758-82c0-8f15374c4845.mp4
+
 
 # Installation
 
@@ -30,7 +43,11 @@
         * <code>npm i console.table</code>
    * Run node: <code>node (filename).js</code>
 
-# Usage
+# Packages Used
+  * node
+  * Mysql2
+  * Console.table
+  * inquirer
  
    
 
