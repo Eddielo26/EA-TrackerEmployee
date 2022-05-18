@@ -2,10 +2,10 @@ USE employee_DB;
 
 INSERT INTO department (name)
 VALUES
-('Sales'),
-('HR'),
-('Accounting'),
-('Research'),
+('Operations'),
+('Analystics'),
+('Marketing'),
+('Executive'),
 ('Production');
 
 INSERT INTO role (title, salary, department_id)
