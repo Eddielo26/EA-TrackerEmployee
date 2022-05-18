@@ -48,7 +48,7 @@ class DB {
   // Add Role
   addRole(roleName, salaryTotal, deptID) {
     const data = [roleName, salaryTotal, deptID];
-    const sql = `INSERT INTO role (title, salary, department_id) VALUES (?, ?, ?)`;
+    const sql = `INSERT INTO role (title, salary, department_id) VALUES (?, ?, ?)`
 
     return this.connection.query(sql, data, (err, res) => {
       if (err) throw err;
@@ -61,7 +61,7 @@ class DB {
     const data = [firstName, lastName, roleID, managerID];
     const sql = `INSERT INTO employee
             (first_name, last_name, role_id, manager_id) 
-            VALUES (?, ?, ?, ?)`;
+            VALUES (?, ?, ?, ?)`
     return this.connection.query(sql, data, (err, res) => {
       if (err) throw err;
       console.log("New Employee added");

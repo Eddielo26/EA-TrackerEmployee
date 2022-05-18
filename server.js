@@ -12,8 +12,8 @@ const questions = [
                 'View all Roles', 
                 'View all Employees', 
                 'Add Department', 
-                'Add Role', 
-                'Add Employee', 
+                'Add New Role', 
+                'Add New Employee', 
                 'Update Employee Role',
                 'Exit'
                 ]
@@ -91,9 +91,9 @@ newDepartment = () => {
       ])
   }
   async function addDepartment() {
-    newDepartment().then(res => 
+    newDepartment().then(response => 
     {
-    const department = db.addDepartment(res.addDept);
+    const department = db.addDepartment(response.addDept);
     console.table(department);
     start();
     }
@@ -103,7 +103,7 @@ newDepartment = () => {
 // Create new Role
 newRole = () => {
     return inquirer
-.prompt([
+      .prompt([
         {
           type: "input",
           message: "New role name?",
@@ -122,9 +122,9 @@ newRole = () => {
       ])
   }
   async function addRole() {
-    newRole().then(res => 
+    newRole().then(response => 
     {
-    const role = db.addRole(res.roleName, res.salaryTotal, res.deptID);
+    const role = db.addRole(response.roleName, response.salaryTotal, response.deptID);
     console.table(role);
     start();
     }
@@ -158,9 +158,9 @@ newEmployee = () => {
       ])
   }
   async function addEmployee() {
-      newEmployee().then(res => 
+      newEmployee().then(response => 
         {
-          const employee = db.addEmployee(res.first_name, res.last_name, res.role_id, res.manager_id)
+          const employee = db.addEmployee(response.first_name, response.last_name, response.role_id, response.manager_id)
       console.table(employee);
       start();
     })
